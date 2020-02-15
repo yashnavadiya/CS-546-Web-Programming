@@ -1,0 +1,30 @@
+{{#if response}}
+
+<div class="center">
+    <section class="searchclass">
+
+        <h1>Details</h1><br>
+        <dl>
+            <p>
+                <dt>First Name</dt>
+                <dd>{{response.firstName}}</dd>
+            </p>
+            <p>
+                <dt>Last Name</dt>
+                <dd>{{response.lastName}}</dd>
+            </p>
+            <p>
+                <dt>Profession</dt>
+                <dd>{{response.Profession}}</dd>
+            </p>
+            <p>
+                <dt>Bio</dt>
+                <dd>{{response.Bio}}</dd>
+            </p>
+        </dl>
+
+        <a href="/logout">logout</a>
+    </section>
+</div>
+
+{{/if}}

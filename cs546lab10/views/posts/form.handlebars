@@ -1,0 +1,14 @@
+<div id="div1" class="center">
+    <form id="login-form" method="POST" action="/login">
+        <label for="username"> Username </label>
+        <input required id="username" type="text" name="username" placeholder="Enter username"><br>
+        <label for="password">Password</label>
+        <input required id="password" type="password" name="password" placeholder="Enter password"><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    {{#if error}}
+    <p>{{this.error}}</p>
+    {{/if}}
+</div>
