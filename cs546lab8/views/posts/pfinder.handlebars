@@ -1,0 +1,21 @@
+<article class="mainpage">
+    <h1>People Finder</h1>
+    <p>Welcome to People Finder.<br>This is the website for finding data of poeple using their name : </p>
+    <form action="/search" method="POST" class="new-post-form">
+        <label>
+            <span>Entername:</span>
+            <input id="Entername:" type="text" name="title" placeholder="Enter name" class="full-width-input" />
+        </label>
+
+        <button type="submit">Search</button>
+    </form>
+    {{#if hasErrors}}
+    {{#each errors}}
+    <ul class="error-list">
+        <li>
+            {{this}}
+        </li>
+    </ul>
+    {{/each}}
+    {{/if}}
+</article>

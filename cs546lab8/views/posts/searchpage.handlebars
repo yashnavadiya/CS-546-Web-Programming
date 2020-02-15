@@ -1,0 +1,27 @@
+<section class="searchclass">
+
+    {{#if res}}
+    <h1>People Found</h1>
+    <h2>Results for : {{personName}}</h2>
+    <ul>
+        {{#each res}}
+        <li>
+            <a href="/details/{{id}}">{{firstName}} {{lastName}}</a>
+        </li>
+        {{/each}}
+    </ul>
+    <a href="/">Back to Search</a>
+    {{else}}
+    <p class="not-found">We're sorry, but no results were found for {{personName}}.</p>
+    <a href="/">Back to Search</a>
+    {{/if}}
+</section>
+{{#if hasErrors}}
+<ul class="error-list">
+    {{#each errors}}
+    <li>
+        {{this}}
+    </li>
+    {{/each}}
+</ul>
+{{/if}}
